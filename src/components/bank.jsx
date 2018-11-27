@@ -1,4 +1,8 @@
-class Bank extends Component {
+import React, { Component } from 'react';
+import arrayOfId from './arrayOfId';
+import arrayOfKeyWord from './arrayOfKeyWord';
+
+export default class Bank extends Component {
   
     render() {
       return (

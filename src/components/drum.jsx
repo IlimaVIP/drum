@@ -1,4 +1,8 @@
-class Drum extends Component {
+import React, { Component } from 'react';
+import bank from './global';
+
+
+export default class Drum extends Component {
     render() {
       return (
         <div className="drum-pad-container">

@@ -1,7 +1,7 @@
 
 ## Drum Machine
 
-[https://ilimavip.github.io/drum/](Demo)
+(Demo)[https://ilimavip.github.io/drum/]
 
 ### This project I've bult for FreeCodeCamp Project
 

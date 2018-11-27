@@ -2,61 +2,13 @@ import React, { Component } from 'react';
 import './App.css';
 import Drum from './components/drum';
 import Bank from './components/bank';
-
-const bank = [{
-  keyData: 81,
-  keyWord: 'Q',
-  id: 'Boom',
-  url: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/boom.wav'
-}, {
-  keyData: 87,
-  keyWord: 'W',
-  id: 'Clap',
-  url: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/clap.wav'
-}, {
-  keyData: 69,
-  keyWord: 'E',
-  id: 'Hihat',
-  url: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/hihat.wav'
-}, {
-  keyData: 65,
-  keyWord: 'A',
-  id: 'Openhat',
-  url: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/openhat.wav'
-}, {
-  keyData: 83,
-  keyWord: 'S',
-  id: 'Kick',
-  url: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/kick.wav'
-}, {
-  keyData: 68,
-  keyWord: 'D',
-  id: 'Ride',
-  url: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/ride.wav'
-}, {
-  keyData: 90,
-  keyWord: 'Z',
-  id: 'Share',
-  url: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/snare.wav'
-}, {
-  keyData: 88,
-  keyWord: 'X',
-  id: 'Tom',
-  url: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/tom.wav'
-}, {
-  keyData: 67,
-  keyWord: 'C',
-  id: 'Tink',
-  url: 'https://raw.githubusercontent.com/wesbos/JavaScript30/master/01%20-%20JavaScript%20Drum%20Kit/sounds/tink.wav'
-}];
-
+import arrayOfSounds from './components/arrayOfSounds';
+import arrayOfId from './components/arrayOfId';
+import arrayOfKeyWord from './components/arrayOfKeyWord';
 
 const bgImgDefault = 'https://steamusercontent-a.akamaihd.net/ugc/874119751173677532/3BF57EFDD10DE1C963E888C703A12CE09CDE26BC/',
       bgImgRec = 'https://cdn.dribbble.com/users/1541110/screenshots/3559194/music-viz.gif',
-      bgImgPlay = 'https://static.collectui.com/shots/3295793/spheres-motion-for-ai-product-design-by-gleb-large',
-      arrayOfSounds = [],
-      arrayOfId = [],
-      arrayOfKeyWord = [];
+      bgImgPlay = 'https://static.collectui.com/shots/3295793/spheres-motion-for-ai-product-design-by-gleb-large';
 
 
 
@@ -107,14 +59,14 @@ class App extends Component {
       this.music = arrayOfSounds[0];
       this.audio = new Audio(this.music);
       let ind = 0;
-      this.audio.addEventListener("ended", play = () => {
+      this.audio.addEventListener("ended", this.play = () => {
         console.log('ended');
         if(ind < arrayOfSounds.length) {
           ind += 1;
           this.music = arrayOfSounds[ind];
           this.audio = new Audio(this.music);
           this.audio.play();
-          this.state.play ? this.audio.addEventListener("ended", play) : this.audio.removeEventListener('ended', play);
+          this.state.play ? this.audio.addEventListener("ended", this.play) : this.audio.removeEventListener('ended', this.play);
         }
       });
       this.setState({
