@@ -17,8 +17,8 @@ export default class Bank extends Component {
           </div>
           <ul>
             {arrayOfId.length ? arrayOfId.map((item, index) => {
-              return (<li> { item } <span> { arrayOfKeyWord[index] } </span></li>)
-            }) : <div><li>Hmm looks like bank is empty</li><li>try recording something awesome!</li></div> }
+              return (<li key={index}> { item } <span> { arrayOfKeyWord[index] } </span></li>)
+            }) : <div><li key="empty">Hmm looks like bank is empty</li><li key="try">try recording something awesome!</li></div> }
           </ul>
         </div>
       )

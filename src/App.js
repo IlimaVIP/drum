@@ -91,7 +91,7 @@ class App extends Component {
 
   onKeyPressed = (e) => {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+    // const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
     const id = audio.getAttribute('data-id');
     if (this.state.record) {
       arrayOfSounds.push(audio.getAttribute('src'))
