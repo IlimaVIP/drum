@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import arrayOfId from './arrayOfId';
 import arrayOfKeyWord from './arrayOfKeyWord';
+import 'font-awesome/css/font-awesome.min.css';
 
 export default class Bank extends Component {
   
