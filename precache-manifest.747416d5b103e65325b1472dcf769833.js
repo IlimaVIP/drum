@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/drum/static/media/fontawesome-webfont.af7ae505.woff2"
   },
   {
-    "revision": "3b76b7a58ff6c7995170",
-    "url": "/drum/static/css/main.03960406.chunk.css"
+    "revision": "ae2b8b198279e907ca7f",
+    "url": "/drum/static/css/main.f633612c.chunk.css"
   },
   {
     "revision": "912ec66d7572ff821749319396470bde",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/drum/static/js/runtime~main.e239c906.js"
   },
   {
-    "revision": "3b76b7a58ff6c7995170",
-    "url": "/drum/static/js/main.3b76b7a5.chunk.js"
+    "revision": "ae2b8b198279e907ca7f",
+    "url": "/drum/static/js/main.ae2b8b19.chunk.js"
   },
   {
     "revision": "fee66e712a8a08eef5805a46892932ad",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/drum/static/css/1.ef22c5a9.chunk.css"
   },
   {
-    "revision": "610b43dc7bb7b0935cde46fd284b0847",
+    "revision": "b265966a474683b6d879c007bc5ef1cc",
     "url": "/drum/index.html"
   }
 ];
