@@ -20,7 +20,7 @@ User Story #6: When I press the trigger key associated with each .drum-pad, the 
 
 User Story #7: When a .drum-pad is triggered, a string describing the associated audio clip is displayed as the inner text of the #display element (each string must be unique).
 
-## I added also other user-stories: 
+## I also added my own user-stories: 
 
 User Story #8: When I press on record, I can record sounds.
 
